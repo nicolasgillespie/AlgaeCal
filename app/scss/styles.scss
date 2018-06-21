@@ -3,6 +3,16 @@ $semibold:      500;
 $regular:       400;
 $light:         300;
 
+
+body {
+    // REMOVE ME - Include background of psd to reference to design
+    background-image:url("../img/page-bg.jpg");
+    background-color: rebeccapurple;
+    background-repeat: no-repeat;
+    background-position:center top;
+    // REMOVE UNTIL ME
+}
+
 header { background-color:#ffffff; }
 
 // Style for the logo
@@ -11,6 +21,13 @@ header { background-color:#ffffff; }
         margin-bottom:5px;
         margin-left:15px;
         margin-top:15px;
+
+        footer & {
+            display:block;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 10px;
+        }
     }
 }
 
@@ -40,42 +57,8 @@ header { background-color:#ffffff; }
     background-size:100% auto;
     color:#ffffff;
     padding:15px 15px 0;
-}
 
-h1 {
-    letter-spacing:1px;
-    margin-top:10px;
-    position:relative;
-    text-align:center;
-    text-transform: uppercase;
-
-    &:before, &:after {
-        background-color:#ffffff;
-        content:'';
-        height:2px;
-        left:-5px;
-        position:absolute;
-        top:48%;
-        width:18%;
-    }
-    &:after {
-        left:auto;
-        right:-5px;
-    }
-}
-
-h2 {
-    letter-spacing:-1px;
-    line-height:44px;
-    margin-left:15px;
-    margin-top:5px;
-
-    span.underline-red {
-        background-image:url("../img/intro/bg-red-line.png");
-        background-position:0px -8px;
-        font-size:1.2em;
-        letter-spacing:0.8px;
-    }
+    h2 { text-align:left;  }
 }
 
 // Video section with text over the video
@@ -86,7 +69,7 @@ h2 {
         font-size:21px;
         line-height:26px;
     }
-    div.video_obj { height:200px; }
+    .video_obj { height:200px; }
 
 }
 
@@ -172,4 +155,44 @@ h2 {
             }
         }
     }
+}
+
+// Supplement facts section
+.supplement-facts {
+    .table-facts {
+        background: white;
+        border:3px solid #000000;
+
+        h2 { margin-top:0; }
+        .border-b {
+            border-bottom:8px solid #000000;
+        }
+        .border-t-large {
+            border-top:15px solid #000000;
+        }
+
+    }
+}
+
+
+
+
+
+// footer
+footer {
+    background-color:#ffffff;
+    padding-bottom:15px;
+
+    nav.col {
+        padding: 0 12%;
+        text-align: center;
+
+        a { color:#8f8f8f; }
+    }
+}
+.copyright {
+    color:#333333;
+    font-size: 18px;
+    margin-top:15px;
+    text-align: center;
 }

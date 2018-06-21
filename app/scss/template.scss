@@ -8,7 +8,7 @@ html {
     padding:0;
 }
 
-// Set primary font-family to replace default font
+// Set titles styles
 body {
     font-family:$primary-font;
     font-size:17px;
@@ -16,8 +16,48 @@ body {
 }
 
 // Title styles / font / font weight
-h1 { font-size:32px; }
-h2 { font-weight:400; }
+h1 {
+    font-size:32px;
+    font-weight: 400;
+    letter-spacing:1px;
+    margin-top:10px;
+    position:relative;
+    text-align:center;
+    text-transform: uppercase;
+
+    .intro &:before, .intro &:after {
+        background-color:#ffffff;
+        content:'';
+        height:2px;
+        left:-5px;
+        position:absolute;
+        top:48%;
+        width:18%;
+    }
+    .intro &:after {
+        left:auto;
+        right:-5px;
+    }
+}
+
+h2 {
+    letter-spacing:-1px;
+    line-height:44px;
+    margin-left:15px;
+    margin-top:5px;
+    text-align:center;
+
+    .underline-red {
+        background-image:url("../img/intro/bg-red-line.png");
+        background-position:0px -8px;
+        font-size:1.2em;
+        letter-spacing:0.8px;
+    }
+}
+
+h3 {
+    text-align:center;
+}
 
 // Change color for anchors
 a {
