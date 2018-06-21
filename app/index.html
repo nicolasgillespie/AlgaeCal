@@ -78,12 +78,12 @@
                         <img class="supply" src="img/boxes-supply/3-month-supply.png" alt="3 month supply" />
                         <p class="price"><sup>$</sup>233<small>USD</small></p>
                         <p class="highlight">Only <sup>$</sup><b>2.58</b>/Day!</p>
-                        <a class="button" href="#">Add to Cart</a>
+                        <a class="button" href="https://www.algaecal.com/product/bone-builder-packs/ ">Add to Cart<figure class="arrow-right"></figure></a>
                     </section>
                 </section>
                 <!-- 6 month supply -->
                 <section class="col">
-                    <section class="box">
+                    <section class="box most_popular">
                         <p class="top-circle"><span>35%</span><br/>OFF</p>
                         <h4 class="title">6 Month Supply</h4>
                         <p class="info">8 AlgaeCal Plus</p>
@@ -91,7 +91,7 @@
                         <img class="supply" src="img/boxes-supply/6-month-supply.png" alt="6 month supply" />
                         <p class="price"><sup>$</sup>337<small>USD</small></p>
                         <p class="highlight">Only <sup>$</sup><b>2.09</b>/Day!</p>
-                        <a class="button" href="#">Add to Cart</a>
+                        <a class="button" href="https://www.algaecal.com/product/bone-builder-packs/ ">Add to Cart<figure class="arrow-right"></figure></a>
                     </section>
                 </section>
                 <!-- 12 month supply -->
@@ -104,7 +104,7 @@
                         <img class="supply" src="img/boxes-supply/12-month-supply.png" alt="6 month supply" />
                         <p class="price"><sup>$</sup>717<small>USD</small></p>
                         <p class="highlight">Only <sup>$</sup><b>1.97</b>/Day!</p>
-                        <a class="button" href="#">Add to Cart</a>
+                        <a class="button" href="https://www.algaecal.com/product/bone-builder-packs/ ">Add to Cart<figure class="arrow-right"></figure></a>
                     </section>
                 </section>
             </article>
@@ -212,6 +212,37 @@
                 </section>
             </article>
         </section>
+        <!-- guarantee -->
+        <section class="container guarantee">
+            <article class="row">
+                <div class="col">
+                    <div class="box-green col">
+                        <div class="box-white">
+                            <figure>
+                                <img src="img/guarantee/7-year-guarantee-large.png" alt="7 year guarantee" />
+                            </figure>
+                            <h3>Stronger Bones for 7 Years Guarantee</h3>
+                            <p>When you follow directions for use of AlgaeCal Plus and Strontium Boost - we guarantee you will see increased bone densityin EVERY follow-up bone scna you have while using these 2 products - or we will refund every penny you paid for our products between your scans. This guarantee extends to every scan you have for the next 7 years! Also, if you are unsatisfied at any time you can return my product for a full refund. no question asked! <a href="#" role="button"  data-toggle="modal" data-target="#guarantee_modal">Click Here for Details</a></p>
+                            <img src="img/guarantee/ceo.jpg" alt="Dean Neuls" />
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="modal fade" id="guarantee_modal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
         <!-- footer -->
         <footer class="container">
             <section class="row">
@@ -244,7 +275,7 @@
                 video.bind("timechange", function(t) {
                     if (t > 132) {
                         // Show boxes
-                        console.log('show boxes!')
+                        $('.boxes').show();
                         return video.unbind;
                     }
                 });

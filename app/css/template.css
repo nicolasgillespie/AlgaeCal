@@ -8,7 +8,7 @@ body {
   font-weight: 300; }
 
 h1 {
-  font-size: 32px;
+  font-size: 1.8em;
   font-weight: 400;
   letter-spacing: 1px;
   margin-top: 10px;
@@ -19,17 +19,17 @@ h1 {
     background-color: #ffffff;
     content: '';
     height: 2px;
-    left: -5px;
+    left: -2%;
     position: absolute;
     top: 48%;
     width: 18%; }
   .intro h1:after {
     left: auto;
-    right: -5px; }
+    right: -2%; }
 
 h2 {
   letter-spacing: -1px;
-  line-height: 44px;
+  line-height: 43px;
   margin-left: 15px;
   margin-top: 5px;
   text-align: center; }
@@ -41,6 +41,9 @@ h2 {
 
 h3 {
   text-align: center; }
+
+img {
+  max-width: 100%; }
 
 a {
   color: #54b8cd; }

@@ -7,6 +7,8 @@ $(document).ready(function() {
         $('.year').html(year);
     }
 
+
+
     // Ajax call to algaecal options for data
     $.ajax({
         url: "https://www.algaecal.com/wp-json/acf/v3/options/options",
@@ -41,6 +43,11 @@ $(document).ready(function() {
             } else {
                 $('.office_hours').hide();
             }
+
+            // Add content for guarantee modal
+            var guarantee_content = result['7yr_full_copy'];
+
+            $('.modal-body').html(guarantee_content);
         },
         error : function(jqXHR, textStatus, errorThrown) {},
 
