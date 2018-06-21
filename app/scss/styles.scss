@@ -6,12 +6,6 @@ $light:         300;
 
 body {
 background-color: #ffffff;
-// REMOVE ME - Include background of psd to reference to design
-background-image:url("../img/page-bg.jpg");
-background-color: rebeccapurple;
-background-repeat: no-repeat;
-background-position:center top;
-// REMOVE UNTIL ME
 }
 
 
@@ -136,39 +130,6 @@ background-position:center top;
             font-weight:$semibold;
             margin-bottom:0;
         }
-        .button {
-            background-image:url("../img/ico/bg-button.jpg");
-            background-size: 100% 100%;
-            border-radius:5px;
-            color:#ffffff;
-            display:block;
-            margin:0 auto;
-            padding: 10px 10px 10px 50px;
-            position:relative;
-            width: 85%;
-
-            &:before {
-                background-image:url("../img/boxes-supply/7-year-guarantee.png");
-                content:"";
-                height:75px;
-                left:-25px;
-                position:absolute;
-                top:-15px;
-                width:75px;
-            }
-            .arrow-right {
-                width: 0;
-                display: inline-block;
-                height: 0;
-                border-top: 8px solid transparent;
-                border-bottom: 8px solid transparent;
-                border-left: 15px solid #fff;
-                vertical-align: middle;
-                margin-bottom: 2px;
-                margin-left: 15px;
-            }
-
-        }
 
         &.most_popular {
             .top-circle { top:-45px; }
@@ -188,19 +149,83 @@ background-position:center top;
         }
     }
 }
+.button {
+    background-image:url("../img/ico/bg-button.jpg");
+    background-size: 100% 100%;
+    border-radius:5px;
+    color:#ffffff;
+    display:block;
+    margin:0 auto;
+    padding: 10px 10px 10px 50px;
+    position:relative;
+    text-align:center;
+    width: 85%;
+
+    &:before {
+        background-image:url("../img/boxes-supply/7-year-guarantee.png");
+        background-size:100%;
+        content:"";
+        height:75px;
+        left:-25px;
+        position:absolute;
+        top:-15px;
+        width:75px;
+    }
+    .arrow-right {
+        width: 0;
+        display: inline-block;
+        height: 0;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 15px solid #fff;
+        vertical-align: middle;
+        margin-bottom: 2px;
+        margin-left: 15px;
+    }
+
+}
 
 // Supplement facts section
 .supplement-facts {
+    padding-top:15px;
+
     .table-facts {
         background: white;
         border:3px solid #000000;
 
-        h2 { margin-top:0; }
-        .border-b {
-            border-bottom:8px solid #000000;
+        h2 {
+            margin-bottom:0;
+            margin-top:0;
+        }
+
+        th { padding:5px 0; }
+        td {
+            line-height: 18px;
+            width:100%;
+
+            &.element {
+                padding-bottom: 5px;
+                padding-top: 5px;
+
+                span {
+                    display:block;
+                    max-width: 65%;
+                }
+            }
+        }
+        .border-b { border-bottom:8px solid #000000;
+            td {
+                padding-bottom:5px;
+                padding-top:5px;
+            }
         }
         .border-t-large {
             border-top:15px solid #000000;
+
+            td {
+                padding-bottom:5px;
+                padding-top:5px;
+            }
         }
 
     }
@@ -225,6 +250,7 @@ background-position:center top;
     figure { margin:0 auto; }
     h3 {
         color:#e16b1e;
+        margin-bottom:0;
         margin-top:30px;
         text-align:left;
     }
@@ -233,16 +259,60 @@ background-position:center top;
     }
 }
 
+// Scientific references
+.scientific_references {
+    padding-top:15px;
+
+    h5 {
+        color:#008ba4;
+        font-size:1.3em;
+    }
+    ol {
+        padding-left:15px;
+        padding-top:10px;
+
+        li {
+            color:#383838;
+            font-size: 18px;
+            line-height: 25px;
+            word-break:break-word;
+        }
+    }
+    h5, ol {
+        margin:0 auto;
+        width:61%;
+    }
+    a {
+        display: block;
+        font-size: 20px;
+        margin: 15px auto;
+        text-align: center;
+    }
+    .button {
+        font-size: 22px;
+        letter-spacing: 1.4px;
+        margin-left: 50px;
+        &:before {
+            height:100px;
+            width:100px;
+        }
+    }
+}
+
 
 // footer
 footer {
+    padding-top:15px;
     padding-bottom:15px;
 
     nav.col {
-        padding: 0 12%;
+        padding: 0 9%;
         text-align: center;
 
-        a { color:#8f8f8f; }
+        a {
+            color:#8f8f8f;
+            font-size:18px;
+        }
     }
 }
 .copyright {
