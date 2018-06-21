@@ -4,17 +4,18 @@ $regular:       400;
 $light:         300;
 
 
-body {
-background-color: #ffffff;
-}
+body { background-color: #ffffff; }
 
+header {
+    padding-top:15px;
+
+}
 
 // Style for the logo
 .logo {
     img {
         margin-bottom:5px;
         margin-left:15px;
-        margin-top:15px;
 
         footer & {
             display:block;
@@ -70,6 +71,7 @@ background-color: #ffffff;
 // Supply section (boxes)
 .boxes {
     display:none;
+    padding-bottom:15px;
     padding-top:15px;
 
     .box {
@@ -187,6 +189,7 @@ background-color: #ffffff;
 
 // Supplement facts section
 .supplement-facts {
+    padding-bottom:15px;
     padding-top:15px;
 
     .table-facts {
@@ -234,6 +237,7 @@ background-color: #ffffff;
 
 // guarantee
 .guarantee {
+    padding-bottom:15px;
     padding-top:15px;
     text-align:center;
 
@@ -254,13 +258,13 @@ background-color: #ffffff;
         margin-top:30px;
         text-align:left;
     }
-    p {
-        text-align:left;
-    }
+    p { text-align:left; }
+    a { text-decoration:underline; }
 }
 
 // Scientific references
 .scientific_references {
+    padding-bottom:15px;
     padding-top:15px;
 
     h5 {
@@ -287,13 +291,18 @@ background-color: #ffffff;
         font-size: 20px;
         margin: 15px auto;
         text-align: center;
+        text-decoration:underline;
     }
     .button {
         font-size: 22px;
         letter-spacing: 1.4px;
         margin-left: 50px;
+        text-decoration:none;
+        width:75%;
+
         &:before {
             height:100px;
+            top:-25px;
             width:100px;
         }
     }

@@ -1,10 +1,12 @@
 body {
   background-color: #ffffff; }
 
+header {
+  padding-top: 15px; }
+
 .logo img {
   margin-bottom: 5px;
-  margin-left: 15px;
-  margin-top: 15px; }
+  margin-left: 15px; }
   footer .logo img {
     display: block;
     margin-right: auto;
@@ -47,6 +49,7 @@ body {
 
 .boxes {
   display: none;
+  padding-bottom: 15px;
   padding-top: 15px; }
   .boxes .box {
     background-color: #ffffff;
@@ -142,6 +145,7 @@ body {
     margin-left: 15px; }
 
 .supplement-facts {
+  padding-bottom: 15px;
   padding-top: 15px; }
   .supplement-facts .table-facts {
     background: white;
@@ -172,6 +176,7 @@ body {
         padding-top: 5px; }
 
 .guarantee {
+  padding-bottom: 15px;
   padding-top: 15px;
   text-align: center; }
   .guarantee .box-green {
@@ -190,8 +195,11 @@ body {
     text-align: left; }
   .guarantee p {
     text-align: left; }
+  .guarantee a {
+    text-decoration: underline; }
 
 .scientific_references {
+  padding-bottom: 15px;
   padding-top: 15px; }
   .scientific_references h5 {
     color: #008ba4;
@@ -211,13 +219,17 @@ body {
     display: block;
     font-size: 20px;
     margin: 15px auto;
-    text-align: center; }
+    text-align: center;
+    text-decoration: underline; }
   .scientific_references .button {
     font-size: 22px;
     letter-spacing: 1.4px;
-    margin-left: 50px; }
+    margin-left: 50px;
+    text-decoration: none;
+    width: 75%; }
     .scientific_references .button:before {
       height: 100px;
+      top: -25px;
       width: 100px; }
 
 footer {
