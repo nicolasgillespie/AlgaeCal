@@ -4,12 +4,12 @@ $regular:       400;
 $light:         300;
 
 
-body { background-color: #ffffff; }
-
-header {
-    padding-top:15px;
-
+body {
+    background-color: #ffffff;
+    min-width:376px;
 }
+
+header { padding-top:15px; }
 
 // Style for the logo
 .logo {
@@ -53,7 +53,11 @@ header {
     color:#ffffff;
     padding:15px;
 
-    h2 { text-align:left;  }
+    h2 {
+        text-align:left;
+
+        @media (min-width:576px) { text-align:center; }
+    }
 }
 
 // Video section with text over the video
@@ -130,7 +134,7 @@ header {
             background-repeat:no-repeat;
             font-size:19px;;
             font-weight:$semibold;
-            margin-bottom:0;
+            margin-bottom:10px;
         }
 
         &.most_popular {
@@ -148,6 +152,12 @@ header {
                 width:calc(100% + 30px);
                 z-index:-1;
             }
+        }
+
+        @media (min-width:480px) {
+            margin-left:auto;
+            margin-right:auto;
+            max-width:410px;
         }
     }
 }

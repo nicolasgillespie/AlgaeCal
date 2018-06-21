@@ -17,10 +17,12 @@ body {
 
 // Title styles / font / font weight
 h1 {
+    display:inline-block;
     font-size:1.8em;
     font-weight: 400;
     letter-spacing:1px;
     margin-top:10px;
+    padding:0 65px;
     position:relative;
     text-align:center;
     text-transform: uppercase;
@@ -29,15 +31,21 @@ h1 {
         background-color:#ffffff;
         content:'';
         height:2px;
-        left:-2%;
+        left:0;
         position:absolute;
         top:48%;
         width:18%;
     }
     .intro &:after {
         left:auto;
-        right:-2%;
+        right:0;
     }
+    @media (min-width:576px) {
+        padding:0 150px;
+
+        .intro &:before, .intro &:after { width:28%; }
+    }
+
 }
 
 h2 {
