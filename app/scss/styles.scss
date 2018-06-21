@@ -1,0 +1,175 @@
+$bold:          700;
+$semibold:      500;
+$regular:       400;
+$light:         300;
+
+header { background-color:#ffffff; }
+
+// Style for the logo
+.logo {
+    img {
+        margin-bottom:5px;
+        margin-left:15px;
+        margin-top:15px;
+    }
+}
+
+// Styles for texts/phone number in header containing the phone number and the green phone icon
+.tel,
+.tel-with-ico {
+    display:inline-block;
+    margin:0 15px;
+}
+
+.tel { font-size:22px; }
+
+.tel-with-ico {
+    background-image:url("../img/ico/ico-tel.png");
+    background-position:left center;
+    background-repeat:no-repeat;
+    background-size:auto 100%;
+    letter-spacing:-0.2px;
+    margin-bottom:5px;
+    padding-left:25px;
+}
+
+// Introducing section (green background)
+.intro {
+    background-image:url("../img/intro/bg-green.jpg");
+    background-repeat:no-repeat;
+    background-size:100% auto;
+    color:#ffffff;
+    padding:15px 15px 0;
+}
+
+h1 {
+    letter-spacing:1px;
+    margin-top:10px;
+    position:relative;
+    text-align:center;
+    text-transform: uppercase;
+
+    &:before, &:after {
+        background-color:#ffffff;
+        content:'';
+        height:2px;
+        left:-5px;
+        position:absolute;
+        top:48%;
+        width:18%;
+    }
+    &:after {
+        left:auto;
+        right:-5px;
+    }
+}
+
+h2 {
+    letter-spacing:-1px;
+    line-height:44px;
+    margin-left:15px;
+    margin-top:5px;
+
+    span.underline-red {
+        background-image:url("../img/intro/bg-red-line.png");
+        background-position:0px -8px;
+        font-size:1.2em;
+        letter-spacing:0.8px;
+    }
+}
+
+// Video section with text over the video
+.video {
+    padding-top:15px;
+
+    p {
+        font-size:21px;
+        line-height:26px;
+    }
+    div.video_obj { height:200px; }
+
+}
+
+// Supply section (boxes)
+.boxes {
+    padding-top:15px;
+
+    .box {
+        background-color:#ffffff;
+        box-shadow:0 0 10px 0px #000;
+        margin:30px 40px 30px 30px;
+        padding:15px 15px 30px 15px;
+        position:relative;
+        text-align:center;
+
+        .top-circle {
+            background-color:#e87b15;
+            box-shadow: 0 0 10px 0 #000;
+            border-radius: 50%;
+            color:#ffffff;
+            font-weight:$bold;
+            height:75px;
+            line-height:1em;
+            padding-top:20px;
+            position:absolute;
+            right:-30px;
+            top:-30px;
+            width:75px;
+
+            span {
+                font-size:1.5em;
+            }
+        }
+        .title {
+            font-weight:$bold;
+            margin-bottom:0px;
+            margin-top:10px;
+        }
+        .info {
+            font-weight:$semibold;
+            margin-bottom:0;
+        }
+        img.supply {
+            margin-top:10px;
+        }
+        .price {
+            font-size:30px;
+            font-weight:$bold;
+            letter-spacing: 1px;
+            margin-bottom:0;
+
+            small {
+                font-size:45%;
+                text-decoration:underline;
+                vertical-align:middle;
+            }
+        }
+        .highlight {
+            font-size:19px;;
+            font-weight:$semibold;
+            margin-bottom:0;
+        }
+
+        .button {
+            background-image:url("../img/ico/bg-button.jpg");
+            background-size: 100% 100%;
+            border-radius:5px;
+            color:#ffffff;
+            display: inline-block;
+            padding: 10px 10px 10px 20px;
+            position:relative;
+            width: 85%;
+
+            &:before {
+                background-image:url("../img/boxes-supply/7-year-guatantee.png");
+                content:"";
+                height:75px;
+                left:-25px;
+                position:absolute;
+                top:-15px;
+                width:75px;
+
+            }
+        }
+    }
+}

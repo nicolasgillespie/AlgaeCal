@@ -1,8 +1,37 @@
+// Set variable to reuse around the website.
+$primary-font:          'Glober', 'Roboto', sans-serif;
+$color-link:            #54b8cd;
+
+
 html {
     margin:0;
     padding:0;
 }
 
+// Set primary font-family to replace default font
 body {
-
+    font-family:$primary-font;
+    font-size:17px;
+    font-weight:300;
 }
+
+// Title styles / font / font weight
+h1 { font-size:32px; }
+h2 { font-weight:400; }
+
+// Change color for anchors
+a {
+    color:$color-link;
+
+    &:hover { color:$color-link; }
+}
+
+.info { color:$color-link; }
+
+// Add class .bold to set paragraphs bold with a class instead of only <b>
+b, .bold { font-weight:700; }
+
+
+//
+.hidden { display:none!important; }
+.visible { display:block!important; }

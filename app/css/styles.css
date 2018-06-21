@@ -1,0 +1,132 @@
+header {
+  background-color: #ffffff; }
+
+.logo img {
+  margin-bottom: 5px;
+  margin-left: 15px;
+  margin-top: 15px; }
+
+.tel,
+.tel-with-ico {
+  display: inline-block;
+  margin: 0 15px; }
+
+.tel {
+  font-size: 22px; }
+
+.tel-with-ico {
+  background-image: url("../img/ico/ico-tel.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  letter-spacing: -0.2px;
+  margin-bottom: 5px;
+  padding-left: 25px; }
+
+.intro {
+  background-image: url("../img/intro/bg-green.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: #ffffff;
+  padding: 15px 15px 0; }
+
+h1 {
+  letter-spacing: 1px;
+  margin-top: 10px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase; }
+  h1:before, h1:after {
+    background-color: #ffffff;
+    content: '';
+    height: 2px;
+    left: -5px;
+    position: absolute;
+    top: 48%;
+    width: 18%; }
+  h1:after {
+    left: auto;
+    right: -5px; }
+
+h2 {
+  letter-spacing: -1px;
+  line-height: 44px;
+  margin-left: 15px;
+  margin-top: 5px; }
+  h2 span.underline-red {
+    background-image: url("../img/intro/bg-red-line.png");
+    background-position: 0px -8px;
+    font-size: 1.2em;
+    letter-spacing: 0.8px; }
+
+.video {
+  padding-top: 15px; }
+  .video p {
+    font-size: 21px;
+    line-height: 26px; }
+  .video div.video_obj {
+    height: 200px; }
+
+.boxes {
+  padding-top: 15px; }
+  .boxes .box {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0px #000;
+    margin: 30px 40px 30px 30px;
+    padding: 15px 15px 30px 15px;
+    position: relative;
+    text-align: center; }
+    .boxes .box .top-circle {
+      background-color: #e87b15;
+      box-shadow: 0 0 10px 0 #000;
+      border-radius: 50%;
+      color: #ffffff;
+      font-weight: 700;
+      height: 75px;
+      line-height: 1em;
+      padding-top: 20px;
+      position: absolute;
+      right: -30px;
+      top: -30px;
+      width: 75px; }
+      .boxes .box .top-circle span {
+        font-size: 1.5em; }
+    .boxes .box .title {
+      font-weight: 700;
+      margin-bottom: 0px;
+      margin-top: 10px; }
+    .boxes .box .info {
+      font-weight: 500;
+      margin-bottom: 0; }
+    .boxes .box img.supply {
+      margin-top: 10px; }
+    .boxes .box .price {
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 0; }
+      .boxes .box .price small {
+        font-size: 45%;
+        text-decoration: underline;
+        vertical-align: middle; }
+    .boxes .box .highlight {
+      font-size: 19px;
+      font-weight: 500;
+      margin-bottom: 0; }
+    .boxes .box .button {
+      background-image: url("../img/ico/bg-button.jpg");
+      background-size: 100% 100%;
+      border-radius: 5px;
+      color: #ffffff;
+      display: inline-block;
+      padding: 10px 10px 10px 20px;
+      position: relative;
+      width: 85%; }
+      .boxes .box .button:before {
+        background-image: url("../img/boxes-supply/7-year-guatantee.png");
+        content: "";
+        height: 75px;
+        left: -25px;
+        position: absolute;
+        top: -15px;
+        width: 75px; }
