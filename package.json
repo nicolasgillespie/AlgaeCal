@@ -1,0 +1,29 @@
+{
+  "name": "algaecal-test",
+  "version": "1.0.0",
+  "description": "Demo website for interview process with AlgaeCal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolasgillespie/AlgaeCal.git"
+  },
+  "keywords": [
+    "AlgaeCal",
+    "interview",
+    "demo"
+  ],
+  "author": "Nicolas Gillespie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolasgillespie/AlgaeCal/issues"
+  },
+  "homepage": "https://github.com/nicolasgillespie/AlgaeCal#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
