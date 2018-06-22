@@ -7,8 +7,6 @@ $(document).ready(function() {
         $('.year').html(year);
     }
 
-
-
     // Ajax call to algaecal options for data
     $.ajax({
         url: "https://www.algaecal.com/wp-json/acf/v3/options/options",
@@ -16,7 +14,6 @@ $(document).ready(function() {
         contentType: 'application/json; charset=utf-8',
         success: function(resultData) {
             var result = resultData['acf'];
-            console.log(result)
 
             // set phone number variables to update phone number field
             var phone_number = result['default_phone_number'];
